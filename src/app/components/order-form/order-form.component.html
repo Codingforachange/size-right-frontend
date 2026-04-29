@@ -1,5 +1,5 @@
 <div class="container mt-4 pb-5">
-  <h2 class="text-center mb-4 text-dark fw-bold">UniFirst Order Entry System</h2>
+  <h2 class="text-center mb-4 text-dark fw-bold">SizeRight Order Entry System</h2>
 
   <div class="card p-4 mb-4 shadow-sm border-top border-success border-4">
     <div class="row g-3">
@@ -24,7 +24,7 @@
 
   <div class="mb-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <h4 class="text-success fw-bold"><i class="bi bi-building"></i> Facility Services / FS Order</h4>
+      <h4 class="text-success fw-bold"><i class="bi bi-building"></i> Facility & Maintenance Order</h4>
       <button class="btn btn-success btn-sm fw-bold" (click)="addFacilityItem()">+ Add Facility Item</button>
     </div>
 
@@ -170,5 +170,12 @@
   <div class="container d-flex justify-content-end gap-3">
     <button class="btn btn-danger px-4 fw-bold shadow-sm" (click)="resetForm()">CLEAR ENTIRE ORDER</button>
     <button class="btn btn-success px-5 fw-bold shadow-sm" (click)="processOrder()">PROCESS & GENERATE PDF</button>
+  </div>
+  <div class="container text-center disclaimer-text mt-5">
+    <p>
+      <strong>SizeRight v1.0</strong> | Independent Industrial Reporting Utility
+      <br>Developed for educational and internal workflow efficiency.
+      <em>Not an official corporate application.</em>
+    </p>
   </div>
 </div>
