@@ -111,7 +111,7 @@ export class OrderFormComponent {
   }
 
   processOrder() {
-    this.http.post('http://127.0.0.1:8000/generate-pdf', this.orderData, { responseType: 'blob' })
+    this.http.post('https://size-right-backend.onrender.com/generate-pdf', this.orderData, { responseType: 'blob' })
     .subscribe(blob => saveAs(blob, `UniFirst_Order_${this.orderData.customerNumber || 'Draft'}.pdf`));
   }
 }
